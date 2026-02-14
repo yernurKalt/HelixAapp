@@ -6,5 +6,5 @@ from app.core.config import settings
 app = FastAPI(
     title=settings.APP_NAME
 )
-
+print("")
 app.include_router(health_router)
