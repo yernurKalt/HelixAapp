@@ -14,5 +14,6 @@ async def get_status():
     return {
         "status": "ok",
         "app_name": settings.APP_NAME,
-        "env": settings.ENV
+        "env": settings.ENV,
+        "db_link": settings.get_db_url
     }
